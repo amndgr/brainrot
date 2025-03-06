@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainrot</title>
+</head>
+<body>
+    <center>
+        <img src="skibidi.jpg" id="niggo" alt="img" width="350" hidden><br><br>
+        <input type="button" id="botao" value="Mostrar" onclick="mostrar()">
+    </center>
+    <script>
+        function mostrar(){
+            let img = document.getElementById("niggo")
+            let button = document.getElementById("botao")
+
+            if (img.hidden) {
+                img.hidden = false
+                button.value = "Ocultar"
+
+            }
+            else{
+                img.hidden = true
+                button.value = "Mostrar"
+            }
+        }
+    </script>
+</body>
+</html>
